@@ -11,8 +11,11 @@
 	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 	<property name="show_sql">true</property>
 	 <property name="hbm2ddl.auto">create</property>
-	<mapping resource="myproject/manytoone/resources/Branch.hbm.xml"/>
-	<mapping resource="myproject/manytoone/resources/Student.hbm.xml"/>
+<!-- 	<mapping resource="myproject/manytoone/resources/Branch.hbm.xml"/>
+	<mapping resource="myproject/manytoone/resources/Student.hbm.xml"/> -->
+	<mapping class="myproject.manytoone.entity.Branch"/>
+	<mapping class="myproject.manytoone.entity.Student"/>
+	
 	</session-factory>
 	
 	
